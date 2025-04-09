@@ -1,0 +1,79 @@
+/* Main styles */
+body {
+    background-color: #e7f5ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.atm-header {
+    background-color: #dc3545;
+}
+
+.atm-footer {
+    background-color: #343a40;
+}
+
+.atm-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.screen {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* Pokeball button style */
+.pokeball-btn {
+    background: linear-gradient(to bottom, #ff1a1a 50%, white 50%);
+    border: 3px solid black;
+    position: relative;
+}
+
+.pokeball-btn:after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Transaction history styles */
+#history-list tr td:first-child {
+    white-space: nowrap;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.btn-outline-purple {
+    border-color: #6f42c1;
+    color: #6f42c1;
+}
